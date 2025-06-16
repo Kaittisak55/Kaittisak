@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StepUp - ร้านรองเท้าออนไลน์</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">StepUp</a>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="#">หน้าแรก</a></li>
+                    <li><a href="#">ผู้ชาย</a></li>
+                    <li><a href="#">ผู้หญิง</a></li>
+                </ul>
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>คอลเลคชั่นใหม่ล่าสุด</h1>
+            <p>ค้นพบสไตล์ที่เป็นคุณในทุกย่างก้าว</p>
+        </section>
+
+        <section class="filter-section">
+            <h2>เลือกดูตามประเภท</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+                <button class="filter-btn" data-filter="running">รองเท้าวิ่ง</button>
+                <button class="filter-btn" data-filter="sneaker">Sneakers</button>
+                <button class="filter-btn" data-filter="formal">รองเท้าทางการ</button>
+            </div>
+        </section>
+        
+        <section class="product-grid">
+            <div class="product-card" data-category="running" data-id="1" data-name="AeroRun Pro" data-price="3200" data-img="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200" alt="รองเท้าวิ่งสีแดง">
+                <h3>AeroRun Pro</h3>
+                <p class="category">รองเท้าวิ่ง</p>
+                <p class="price">3,200 ฿</p>
+                <button class="buy-btn">เพิ่มลงตะกร้า</button>
+            </div>
+            <div class="product-card" data-category="sneaker" data-id="2" data-name="Urban Walker" data-price="2550" data-img="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1200">
+                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=1200" alt="Sneaker สีพาสเทล">
+                <h3>Urban Walker</h3>
+                <p class="category">Sneakers</p>
+                <p class="price">2,550 ฿</p>
+                <button class="buy-btn">เพิ่มลงตะกร้า</button>
+            </div>
+            <div class="product-card" data-category="formal" data-id="3" data-name="Classic Gentleman" data-price="4500" data-img="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1200">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1200" alt="รองเท้าหนังสีน้ำตาล">
+                <h3>Classic Gentleman</h3>
+                <p class="category">รองเท้าทางการ</p>
+                <p class="price">4,500 ฿</p>
+                <button class="buy-btn">เพิ่มลงตะกร้า</button>
+            </div>
+            <div class="product-card" data-category="sneaker" data-id="4" data-name="CloudStep Lite" data-price="1990" data-img="https://images.unsplash.com/photo-1515955656352-a1fa3ffcdda9?q=80&w=1200">
+                <img src="https://m.media-amazon.com/images/I/61c7L6AyfcL._SY695_.jpg" alt="Sneaker สีขาว">
+                <h3>CloudStep Lite</h3>
+                <p class="category">Sneakers</p>
+                <p class="price">1,990 ฿</p>
+                <button class="buy-btn">เพิ่มลงตะกร้า</button>
+            </div>
+            <div class="product-card" data-category="running" data-id="5" data-name="Night Flash" data-price="2800" data-img="https://images.unsplash.com/photo-1587563871167-1bee9c341296?q=80&w=1200">
+                <img src="https://under2ksport.com/wp-content/uploads/2023/02/O1CN01fl517k1annXDJqamY_416573375-600x600.jpg" alt="รองเท้าวิ่งสีดำ">
+                <h3>Night Flash</h3>
+                <p class="category">รองเท้าวิ่ง</p>
+                <p class="price">2,800 ฿</p>
+                <button class="buy-btn">เพิ่มลงตะกร้า</button>
+            </div>
+            <div class="product-card" data-category="sneaker" data-id="6" data-name="Retro Vibe 80s" data-price="2750" data-img="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?q=80&w=1200">
+                <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?q=80&w=1200" alt="Sneaker หลายสี">
+                <h3>Retro Vibe 80s</h3>
+                <p class="category">Sneakers</p>
+                <p class="price">2,750 ฿</p>
+                <button class="buy-btn">เพิ่มลงตะกร้า</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 StepUp Thailand. All rights reserved.</p>
+    </footer>
+
+    <div id="cart-modal-overlay" class="cart-modal-overlay">
+        <div id="cart-modal" class="cart-modal">
+            <div class="cart-modal-header">
+                <h2>ตะกร้าสินค้าของคุณ</h2>
+                <button id="close-cart-btn" class="close-cart-btn">×</button>
+            </div>
+            <div id="cart-items" class="cart-modal-body"></div>
+            <div class="cart-modal-footer">
+                <div class="total-price">
+                    <strong>ยอดรวม:</strong>
+                    <span id="cart-total">0 ฿</span>
+                </div>
+                <button class="checkout-btn">ชำระเงิน</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ชำระเงิน - StepUp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">StepUp</a>
+            <a href="index.html" class="back-to-shop"> ← กลับไปเลือกสินค้า</a>
+        </nav>
+    </header>
+
+    <main class="checkout-main">
+        <div class="checkout-container">
+            <div class="customer-info">
+                <h2>ข้อมูลสำหรับจัดส่ง</h2>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="fullname">ชื่อ-นามสกุลผู้รับ</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">ที่อยู่</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">เบอร์โทรศัพท์</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">อีเมล</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <h2>วิธีการชำระเงิน</h2>
+                    <div class="payment-method">
+                        <input type="radio" id="cod" name="payment" value="cod" checked>
+                        <label for="cod">เก็บเงินปลายทาง (COD)</label>
+                    </div>
+                    <div class="payment-method">
+                        <input type="radio" id="card" name="payment" value="card">
+                        <label for="card">บัตรเครดิต / เดบิต (จำลอง)</label>
+                    </div>
+
+                    <button type="submit" class="place-order-btn">ยืนยันการสั่งซื้อ</button>
+                </form>
+            </div>
+
+            <div class="order-summary">
+                <h2>สรุปรายการสั่งซื้อ</h2>
+                <div id="summary-items"></div>
+                <div class="summary-total">
+                    <div class="total-row">
+                        <span>ยอดรวม</span>
+                        <span id="summary-subtotal">0 ฿</span>
+                    </div>
+                    <div class="total-row">
+                        <span>ค่าจัดส่ง</span>
+                        <span>ฟรี</span>
+                    </div>
+                    <div class="total-row grand-total">
+                        <span>ยอดสุทธิ</span>
+                        <span id="summary-grandtotal">0 ฿</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 StepUp Thailand. All rights reserved.</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
